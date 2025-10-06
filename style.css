@@ -48,8 +48,8 @@ nav {
 .logo {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.5rem;
-    color: var(--primary-blue);
-    text-shadow: 0 0 10px var(--accent-cyan);
+    color: #0946a9;
+    text-shadow: none;
 }
 
 .nav-links {
