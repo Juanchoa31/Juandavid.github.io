@@ -1,1 +1,1 @@
-# Portafolio del desarrollador en proceso
+# Portfolio of delevoper in process.⌛❤️‍🩹

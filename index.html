@@ -3,78 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Juan David Zapata | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <H1>Portfolio, dev Juan David</H1>
-    
-    <!-- Página principal / contenedor -->
     <header>
-        <h1><!-- Tu nombre aquí --></h1>
+        <nav>
+            <h1 class="logo">Juan David Zapata</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-    <!-- Sección: foto + descripción -->
-    <section id="sobre-mi">
-        <div id="foto">
-            <!-- Aquí va la imagen de perfil -->
-            <!-- Ejemplo: <img src="ruta/a/tu-foto.jpg" alt="Foto de Nombre"> -->
+    <section class="hero">
+        <div class="intro">
+            <h2 class="typewriter">Hey World, I'm Juan David Zapata; Developer</h2>
+            <p class="subtitle">A tech lover who builds some things with <span class="highlight">Java</span>, explores <span class="highlight">Python</span>, and enjoys bringing ideas to life with <span class="highlight">code</span>.</p>
+            <a href="#projects" class="btn">Explore My Work</a>
         </div>
+    </section>
 
-        <div id="descripcion">
-            <h2>About me.</h2>
-            <p>
-            I am a software engineer student. I am expanding my knowledge in back-end development, 
-            and I wish work as a software developer at a company that creates systems for any enterprises. 
-            I love to learn and build something new, productive, innovative and creative.
-            </p>
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Vehicle Management System</h3>
+                <p>A Python project for managing vehicle rentals using OOP principles.</p>
+            </div>
+            <div class="project-card">
+                <h3>Club Member Manager</h3>
+                <p>Java desktop app with GUI for managing club members, billing, and funds.</p>
+            </div>
+            <div class="project-card">
+                <h3>Tournament Management System</h3>
+                <p>Python system to organize and track tournaments efficiently.</p>
+            </div>
+            <div class="project-card">
+                <h3>CSV File Handler</h3>
+                <p>Java project that creates, reads, and manages CSV files using Swing UI.</p>
+            </div>
         </div>
-        </section>
+    </section>
 
-    <!-- Sección: grilla de enlaces a redes sociales (4 o 5 enlaces) -->
-    <section id="redes-sociales">
-        <h2>Redes</h2>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate developer who enjoys combining creativity with technology.  
+            Whether it's building Java interfaces, automating tasks in Python, or exploring new frameworks,  
+            I’m always learning something new. Also a proud <span class="highlight">Magic: The Gathering</span> player.
+        </p>
+    </section>
 
-        <!-- Usamos una lista para la "grilla" de enlaces -->
-        <ul id="grilla-redes">
-            <li><a href="#" title="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="#" title="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="#" title="Twitter" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            <li><a href="#" title="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="#" title="Otro" target="_blank" rel="noopener noreferrer">Otro</a></li>
-        </ul>
-        </section>
-
-        <!-- Sección: habilidades (imágenes, sin link) -->
-        <section id="habilidades">
-        <h2>Habilidades</h2>
-
-        <!-- Lista de imágenes que representan habilidades -->
-        <ul id="grilla-habilidades">
-                <li>
-                <!-- <img src="ruta/a/habilidad1.svg" alt="Nombre de la habilidad 1"> -->
-                </li>
-                <li>
-                <!-- <img src="ruta/a/habilidad2.svg" alt="Nombre de la habilidad 2"> -->
-                </li>
-                <li>
-                <!-- <img src="ruta/a/habilidad3.svg" alt="Nombre de la habilidad 3"> -->
-                </li>
-                <li>
-                <!-- <img src="ruta/a/habilidad4.svg" alt="Nombre de la habilidad 4"> -->
-                </li>
-                <li>
-                <!-- <img src="ruta/a/habilidad5.svg" alt="Nombre de la habilidad 5"> -->
-                </li>
-        </ul>
-            </section>
-
-    </main>
-
-    <footer>
-        <p><!-- Pie de página: contacto, copyright, etc. --></p>
+    <footer id="contact">
+        <p>Connect with me on my networks — coming soon 💻✨</p>
+        <p class="copy">&copy; 2025 Juan David Zapata</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
