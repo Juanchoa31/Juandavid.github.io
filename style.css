@@ -8,9 +8,9 @@
     --bg-dark: #0a0a0f;
     --bg-card: #11111a;
     --text-light: #e0e0ff;
-    --primary-blue: #3a86ff;
-    --secondary-red: #ff006e;
-    --accent-cyan: #00f5d4;
+    --primary-blue: #0946a9;
+    --secondary-red: #6020d6;
+    --accent-cyan: #6dc7eb;
     --shadow: rgba(0, 0, 0, 0.6);
 }
 
@@ -87,22 +87,12 @@ nav {
     font-size: 1.8rem;
     color: var(--accent-cyan);
     font-family: 'JetBrains Mono', monospace;
-    overflow: hidden;
-    border-right: .15em solid var(--secondary-red);
-    white-space: nowrap;
+    border: none;
+    white-space: normal;
     margin: 0 auto 1rem auto;
     letter-spacing: .05em;
-    animation: typing 4s steps(70, end), blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--secondary-red) }
+    display: block;
+    text-align: center;
 }
 
 .subtitle {
@@ -115,20 +105,21 @@ nav {
 }
 
 .btn {
-    background: linear-gradient(90deg, var(--primary-blue), var(--secondary-red));
+    background: #0946a9; /* Tu color principal */
     border: none;
     color: white;
     padding: 0.8rem 1.6rem;
     border-radius: 8px;
     font-weight: 600;
     text-decoration: none;
-    box-shadow: 0 0 15px var(--secondary-red);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(9, 70, 169, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px var(--accent-cyan);
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(9, 70, 169, 0.8);
+    background: #0b5ee0; /* un tono más claro al pasar el mouse */
 }
 
 /* Projects */
