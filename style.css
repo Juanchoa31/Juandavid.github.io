@@ -186,3 +186,43 @@ footer .copy {
     font-size: 0.9rem;
     color: #888;
 }
+
+.theme-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin-left: 4rem;
+}
+.theme-switch input {
+    display: none;
+}
+.slider {
+    width: 50px;
+    height: 26px;
+    background-color: #ccc;
+    border-radius: 34px;
+    position: relative;
+    display: inline-block;
+    transition: 0.4s;
+}
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+input:checked + .slider {
+    background-color: #0946a9;
+}
+input:checked + .slider::before {
+    transform: translateX(24px);
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}

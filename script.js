@@ -26,4 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     icons.forEach((icon, i) => {
         icon.style.animation = `floatIcon 3s ease-in-out ${i * 0.3}s infinite`;
     });
+
+    const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode', toggle.checked);
+    });
 });
