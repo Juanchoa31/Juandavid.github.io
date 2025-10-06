@@ -223,6 +223,10 @@ input:checked + .slider::before {
     transform: translateX(24px);
 }
 
+<<<<<<< HEAD
+=======
+//Esto es para tomar el codigo que tenía antes
+>>>>>>> 0f5605a7d69ef170b694cb158908d0a145e8ab10
 body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
